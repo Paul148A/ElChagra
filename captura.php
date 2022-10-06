@@ -1,5 +1,5 @@
 <?php
-
+//Captura y escalación del array que se registra al comprar productos con el boton de paypal
 require "conexiondata.php";
 require "token.php";
 

@@ -1,4 +1,6 @@
 <?php
+//Convertir a un solo array a todos los productos que se vayan agregando al carrito 
+//$_POST['cant']  simboliza la cantidad del contador 
 
 require "token.php";
 

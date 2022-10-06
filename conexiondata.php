@@ -1,6 +1,6 @@
 <?php
 
-
+//conexion a la base de datos con atributo PDO 
 $host = "localhost";
 $usuario= "root";
 $contraseña = "";

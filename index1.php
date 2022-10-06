@@ -1,3 +1,4 @@
+<!--Vista principal-->
 <?php
 include "token.php";
 ?>
@@ -9,7 +10,6 @@ include "token.php";
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="sistema/css/styles24.css">
   <link rel="stylesheet" href="sistema/css/fontawesome.min.css">
@@ -20,30 +20,11 @@ include "token.php";
 </head>
 
 <body>
-  <div class="container-fluid bg" id="inicio">
-    <div class="row">
-      <div class="col-3 d-none d-sm-none d-md-none d-xl-block">
-        <br>
-        <a href="https://www.facebook.com/ElchagraSupermercado/?ref=py_c" style="color: black; margin-left: 50px; "><i data-feather="facebook"></i></a>
-        <a style="color: black; margin-left: 30px; margin-top: 30px;"><i data-feather="instagram"></i></a>
-        <a style="color: black; margin-left: 30px;">
-          <ion-icon name="logo-tiktok"></ion-icon>
-        </a>
-      </div>
-      <div class="col-lg-5 col-12">
-        <img src="sistema/img/chagraf.png" width="170px" class="mx-auto d-block">
-      </div>
-      <div class=" col-4 d-none d-sm-none d-md-none d-xl-block" align="end"><br>
-        <strong class="navbar-text text" style="margin-right: 6px;">
-          Contactanos:
-        </strong>
-        <span class="navbar-text" style="margin-right: 60px;">
-          <i data-feather="phone"></i> 0998085736
-        </span>
-      </div>
-    </div>
-  </div>
+  <!--nav-->
+  <?php include "sistema/includes/nav.php" ?>
+  <!--fin nav-->
 
+  <!--Navbar de navegacion general, con boton de carrito, imagen y botones enrutados-->
   <div class="container-fluid bgnav"><br>
     <div class="row">
       <div class="col-lg-8 col-12">

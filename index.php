@@ -47,11 +47,9 @@ if (!empty($_SESSION['active'])) {
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Coorporacion Aterriza Global</title>
+  <title>El Chagra</title>
 
-  <!-- Custom fonts for this template-->
   <link href="sistema/vendor/fontawesome-free/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <!-- Custom styles for this template-->
   <link href="sistema/css/bootstrap2.min.css" rel="stylesheet">
 
 </head>

@@ -25,26 +25,7 @@ include "../conexion.php";
 		
 
         <form action="files.php" method="post" enctype="multipart/form-data" id="filesForm">
-        <div class="form-group col-md-4 offset-md-4">
-           <label>Proveedor</label>
-           <?php
-            $query_proveedor = mysqli_query($conexion, "SELECT codproveedor, proveedor FROM proveedor ORDER BY proveedor ASC");
-            $resultado_proveedor = mysqli_num_rows($query_proveedor);
-            mysqli_close($conexion);
-            ?>
-           <select id="proveedor" name="proveedor" class="form-control">
-             <?php
-              if ($resultado_proveedor > 0) {
-                while ($proveedor = mysqli_fetch_array($query_proveedor)) {
-                  // code...
-              ?>
-                 <option value="<?php echo $proveedor['codproveedor']; ?>"><?php echo $proveedor['proveedor']; ?></option>
-             <?php
-                }
-              }
-              ?>
-           </select>
-         </div>
+        
         <div class="col-md-4 offset-md-4">
            <label>Archivo CSV</label>
 

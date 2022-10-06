@@ -1,3 +1,7 @@
+<!--Array demostrativo de una compra realizada con paypal, se puede escalar el array en caso de 
+requerir un nuevo dato y subirlo a la base de datos-->
+
+
 array (
   'detalles' => array 
   (

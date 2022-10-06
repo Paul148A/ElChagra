@@ -1,8 +1,12 @@
+<!--Vista individual de cada producto-->
+
 <?php
 
 include "conexion.php";
 include "token.php";
 
+//creacion y validacion del token y el id para extraer y reflejar los
+// datos del producto seleccionado
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 $token = isset($_GET['token']) ? $_GET['token'] : '';
 
@@ -33,8 +37,7 @@ if ($id == '' || $token == '') {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- CSS only -->
+    <title>El Chagra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="sistema/css/styles24.css">
     <link rel="stylesheet" href="sistema/css/fontawesome.min.css">
@@ -45,32 +48,19 @@ if ($id == '' || $token == '') {
 </head>
 
 <body>
-<div class="container-fluid bg" id="inicio">
-    <div class="row">
-      <div class="col-4 d-none d-sm-none d-md-none d-xl-block">
-        <br>
-        <a href="https://www.facebook.com/ElchagraSupermercado/?ref=py_c" style="color: black; margin-left: 50px; "><i data-feather="facebook"></i></a>
-        <a style="color: black; margin-left: 30px; margin-top: 30px;"><i data-feather="instagram"></i></a>
-        <a style="color: black; margin-left: 30px;">
-          <ion-icon name="logo-tiktok"></ion-icon>
-        </a>
-      </div>
-      <div class="col-lg-4 col-12 mx-auto">
-      <a href="index1.php"><img src="sistema/img/chagraf.png" width="170px" class="mx-auto d-block"></a>
-      </div>
-      <div class=" col-4 d-none d-sm-none d-md-none d-xl-block" align="end"><br>
-        <strong class="navbar-text text" style="margin-right: 6px;">
-          Contactanos:
-        </strong>
-        <span class="navbar-text" style="margin-right: 60px;">
-          <i data-feather="phone"></i> 0998085736
-        </span>
-      </div>
-    </div>
-  </div><br>
+<!--nav-->
+<?php include "sistema/includes/nav.php"?>
+ <!--fin nav-->
+<br>
+ <!--boton del carrito-->
+
     <div class="col-lg-11 col-9" align="end">
         <a href="checkout.php"><button class="buttoncarrito">Mi carrito <br><span class="material-symbols-outlined iconcart">add_shopping_cart</span><br><span id="num_cart"><?php echo $num_cart; ?></span></button></a>
     </div><br>
+ <!--fin boton del carrito-->
+
+ <!--Tarjeta del producto seleccionado-->
+
     <div class=" vistap container-lg card">
         <div class="row">
             <div class="col-lg-5 col-12 bgim" style="display: flex;">
@@ -115,6 +105,7 @@ if ($id == '' || $token == '') {
                 </div>
             </div>
         </div><br><br>
+        <!--Informacion agergada de los metodos de pago-->
         <div class="row">
             <div class="col-6 d-none d-sm-none d-md-none d-xl-block"></div>
             <div class="col-lg-6 col-11" align="center">
@@ -149,7 +140,10 @@ if ($id == '' || $token == '') {
                 </div><br>
             </div>
         </div>
+        <!--fin Informacion agergada de los metodos de pago-->
     </div><br>
+ <!--fin Tarjeta del producto seleccionado-->
+
 </body>
 <?php include "sistema/includes/pie.php" ?>
 <script src="https://unpkg.com/feather-icons"></script>
